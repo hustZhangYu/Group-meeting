@@ -5,4 +5,4 @@
 
 ### 2023.3.16
 Perturbation calculation for Multifrctal states.\
-The origin of MBC region and Ergidic breaking.
+The origin of MBC region and Ergodic breaking.
