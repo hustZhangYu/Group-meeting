@@ -1,3 +1,4 @@
+addpath(fileparts(mfilename('fullpath')));
 clear all;
 clc;
 
@@ -22,7 +23,7 @@ J=1;
 lambda=ones(1,L);
 H=J*diag(ones(1,L-1),-1)+J*diag(ones(1,L-1),1)+V*diag(lambda./X);
 
-% ±ß½çÌõ¼þ
+% Â±ÃŸÂ½Ã§ÃŒÃµÂ¼Ã¾
 bd=0;
 if bd==0
 H(1,L)=0;
@@ -45,12 +46,4 @@ DataEAll(k,:)=E';
 end
 
 EVIprPlot(V_all,DataEAll,DataAll)
-
-
-function a2 = Ipr(psi)
-%IPR get the Ipr for a vector \sum_i|psi_i|^4
-%  
-a=psi.*conj(psi);
-a2=sum(a.^2);
-end
 
